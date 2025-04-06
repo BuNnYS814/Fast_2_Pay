@@ -16,7 +16,9 @@ mongoose.connect('mongodb+srv://pvsprasad814:pvsprasad8147@cluster0.ukgkdkw.mong
 
 // Routes
 const userRoutes = require('./routes/userRoutes');
+const transactionRoutes = require('./routes/transactionRoutes');
 app.use('/api', userRoutes);
+app.use('/api', transactionRoutes);
 
 // Start server
 const PORT = process.env.PORT || 5000;
